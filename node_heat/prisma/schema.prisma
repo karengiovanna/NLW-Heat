@@ -1,0 +1,11 @@
+// Toda configuração de banco de dados ou tabelas colocaremos dentro desse arquivo
+
+//mostra as configurações do banco
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
